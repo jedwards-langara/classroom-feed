@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Continuing Studies - Class Feed</title>
+
+    <!-- DOCUMENT STYLING -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- DOCUMENT SCRIPTS -->
+    <!-- <script src="js/clock.js" charset="utf-8"></script>
+    <script src="js/scroll.js" charset="utf-8"></script> -->
+
+</head>
+
+<body scroll="no">
+
+<!-- ===============SCHEDULE================== -->
+<div id="classfeed">
+
+    <section id="schedule-container">
+        <ul id="widget-info">
+            <li class="info-row">
+                <span class="row-room-number">Room</span>
+                <span class="row-course-name">Course</span>
+                <span class="row-start-time">Start/End</span>
+            </li>
+        </ul>
+        <ul id="widget">
+
+            <li class="course-row">
+                <span class="row-room-number"> A218 </span>
+
+                <span class="row-course-name">Professional Development 4</span>
+                    <span class="instructor">Backus D </span>
+
+
+                <span class="row-start-time"><!--0830-->8:30 am<br/>
+                    <span class="row-end-time"><!--1055-->10:55 am</span>
+                </span>
+            </li>
+
+            <li class="course-row">
+                <span class="row-room-number"> A218 </span>
+
+                <span class="row-course-name">Professional Development 4</span>
+                    <span class="instructor">Backus D </span>
+
+
+                <span class="row-start-time"><!--0830-->8:30 am<br/>
+                    <span class="row-end-time"><!--1055-->10:55 am</span>
+                </span>
+            </li>
+            <li class="course-row">
+                <span class="row-room-number"> A218 </span>
+
+                <span class="row-course-name">Professional Development 4</span>
+                    <span class="instructor">Backus D </span>
+
+
+                <span class="row-start-time"><!--0830-->8:30 am<br/>
+                    <span class="row-end-time"><!--1055-->10:55 am</span>
+                </span>
+            </li>
+            <li class="course-row">
+                <span class="row-room-number"> A218 </span>
+
+                <span class="row-course-name">Professional Development 4</span>
+                    <span class="instructor">Backus D </span>
+
+
+                <span class="row-start-time"><!--0830-->8:30 am<br/>
+                    <span class="row-end-time"><!--1055-->10:55 am</span>
+                </span>
+            </li>
+            <li class="course-row">
+                <span class="row-room-number"> A218 </span>
+
+                <span class="row-course-name">Professional Development 4</span>
+                    <span class="instructor">Backus D </span>
+
+
+                <span class="row-start-time"><!--0830-->8:30 am<br/>
+                    <span class="row-end-time"><!--1055-->10:55 am</span>
+                </span>
+            </li>
+            <li class="course-row">
+                <span class="row-room-number"> A218 </span>
+
+                <span class="row-course-name">Professional Development 4</span>
+                    <span class="instructor">Backus D </span>
+
+
+                <span class="row-start-time"><!--0830-->8:30 am<br/>
+                    <span class="row-end-time"><!--1055-->10:55 am</span>
+                </span>
+            </li>
+            <li class="course-row">
+                <span class="row-room-number"> A218 </span>
+
+                <span class="row-course-name">Professional Development 4</span>
+                    <span class="instructor">Backus D </span>
+
+
+                <span class="row-start-time"><!--0830-->8:30 am<br/>
+                    <span class="row-end-time"><!--1055-->10:55 am</span>
+                </span>
+            </li>
+            <li class="course-row">
+                <span class="row-room-number"> A218 </span>
+
+                <span class="row-course-name">Professional Development 4</span>
+                    <span class="instructor">Backus D </span>
+
+
+                <span class="row-start-time"><!--0830-->8:30 am<br/>
+                    <span class="row-end-time"><!--1055-->10:55 am</span>
+                </span>
+            </li>
+        </ul>
+
+    </section>
+
+</div>
+
+
+
+<!--  DATE/TIME  -->
+
+    <div id="current-time">
+        <p id="clock">HH:MM</p>
+        <p id="date">January 01, 2017</p>
+    </div>
+
+
+<!-- INLINE SCRIPTS FOR DATE/TIME CONTROL -->
+    <script type="text/javascript">
+    //Control TIME
+        var myTimer = setInterval(setClock,1000);
+
+             function setClock(){
+                document.getElementById("clock").innerHTML=new
+                Date().toLocaleTimeString(navigator.language, {
+                hour: '2-digit', minute:'2-digit'});
+            };
+
+
+    //Control DATE
+
+    function clockTick() {
+
+        var currentTime = new Date();
+        var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+        var month = currentTime.getMonth() + 1;
+        var day = currentTime.getDate();
+        var year = currentTime.getFullYear();
+
+            document.getElementById('date').innerHTML = months[currentTime.getMonth()] + " " + currentTime.getDate()+ ", " + currentTime.getFullYear();
+        }
+
+        setInterval (function() {clockTick();}, 1000);
+
+    </script>
+</body>
+
+</html>

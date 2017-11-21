@@ -1,0 +1,161 @@
+/* DOCUMENT STYLING DEFINITIONS */
+/* WHITE VARIANTS */
+/* BLACK VARIANTS */
+/* BRAND */
+/* STYLES FOR CLOCK COMPONENT */
+#current-time {
+  display: inline-block;
+  position: absolute;
+  bottom: 2em;
+  right: 5em;
+  padding-bottom: 1em;
+  margin: 0 2em 3em 0;
+  border-bottom: 6px solid #f15a22;
+}
+
+#clock, #date {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  line-height: 1.2em;
+}
+
+#date {
+  font-size: 1.7em;
+}
+
+#clock {
+  font-size: 5em;
+}
+
+/* DOCUMENT STYLING DEFINITIONS */
+/* WHITE VARIANTS */
+/* BLACK VARIANTS */
+/* BRAND */
+/* DOCUMENT STYLING DEFINITIONS */
+/* WHITE VARIANTS */
+/* BLACK VARIANTS */
+/* BRAND */
+/* STYLES FOR COURSE CALENDAR */
+#schedule-container {
+  float: left;
+  width: 65%;
+  margin: 3em;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0;
+  min-height: 85%;
+  height: 12em;
+  max-height: 12em;
+}
+
+.info-row {
+  font-family: "Lato", Arial, Helvetica, Sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 100%;
+  background-color: #000000;
+  color: #fff;
+  width: 100%;
+  padding: 1em 0 1em 1em;
+  letter-spacing: 2px;
+}
+
+.course-row {
+  color: #000000;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 100%;
+  padding: 0.4em 0 0.4em 0.4em;
+}
+
+ul#widget > li:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.row-course-name {
+  font-size: 160%;
+  padding: 0.5em;
+}
+
+.row-start-time, .row-end-time, .row-course-name, .row-room-number, .row-crn {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.row-room-number {
+  width: 10%;
+  padding: 1rem;
+}
+
+.course-row .row-room-number {
+  font-size: 125%;
+  text-align: center;
+}
+
+span.instructor {
+  font-family: "Lato", Arial, Helvetica, Sans-serif;
+  font-size: 100%;
+  font-weight: bold;
+  color: #595959;
+  padding: 1rem;
+  display: inline-block;
+}
+
+.row-start-time {
+  width: 20%;
+  text-align: center;
+  display: inline-block;
+  float: right;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: arial, sans-serif;
+}
+
+body {
+  background: black;
+  height: 100%;
+  overflow: hidden;
+}
+
+#classfeed {
+  position: absolute;
+  width: 1600px;
+  height: 900px;
+  background: url("/img/mountains-min.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: -100;
+}
+
+h1 {
+  font-family: "Adelle", "Bitter", Georgia, serif;
+  font-size: 2.7em;
+  margin: 0;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Lato", Arial, Helvetica, Sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 1px;
+  font-size: 1.25em;
+}
+
+p {
+  font-family: "Lato", Arial, Helvetica, Sans-serif;
+  font-size: 1.25em;
+  line-height: 1.3em;
+}
+
+ul, li {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  list-style-type: none;
+}

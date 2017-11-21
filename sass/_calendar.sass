@@ -1,0 +1,69 @@
+@import _mixins/_color.sass
+
+/* STYLES FOR COURSE CALENDAR */
+
+#schedule-container
+    float: left
+    width: 65%
+    margin: 3em
+    overflow: hidden
+    background-color: $accent-black
+    padding: 0
+    min-height: 85%
+    height: 12em
+    max-height: 12em
+
+.info-row
+    font-family: "Lato", Arial, Helvetica, Sans-serif
+    font-weight: bold
+    text-align: center
+    text-transform: uppercase
+    font-size: 100%
+    background-color: $black
+    color: $white
+    width: 100%
+    padding: 1em 0 1em 1em
+    letter-spacing: 2px
+
+.course-row
+    color: $black
+    width: 100%
+    box-sizing: border-box
+    background-color: $accent-black
+    font-size: 100%
+    padding: 0.4em 0 0.4em 0.4em
+
+ul#widget > li:nth-of-type(odd)
+    background-color: $subtle-black
+
+.row-course-name
+    font-size: 160%
+    padding: .5em
+
+.row-start-time, .row-end-time, .row-course-name, .row-room-number, .row-crn
+    display: inline-block
+    vertical-align: top
+
+.row-room-number
+    width: 10%
+    padding: 1rem
+
+
+.course-row .row-room-number
+    font-size: 125%
+    text-align: center
+
+span.instructor
+    font-family: 'Lato', Arial, Helvetica, Sans-serif
+    font-size: 100%
+    font-weight: bold
+    color: lighten($black, 35%)
+    padding: 1rem
+    display: inline-block
+
+
+.row-start-time
+    width: 20%
+    text-align: center
+    display: inline-block
+    float: right
