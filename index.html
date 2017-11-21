@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- DOCUMENT SCRIPTS -->
-    <!-- <script src="js/clock.js" charset="utf-8"></script>
-    <script src="js/scroll.js" charset="utf-8"></script> -->
+    <script src="js/jquery.js" charset="utf-8"></script>
+    <script src="js/scroll.js" charset="utf-8"></script>
 
 </head>
 
@@ -21,132 +21,461 @@
 <!-- ===============SCHEDULE================== -->
 <div id="classfeed">
 
-    <section id="schedule-container">
-        <ul id="widget-info">
-            <li class="info-row">
-                <span class="row-room-number">Room</span>
-                <span class="row-course-name">Course</span>
-                <span class="row-start-time">Start/End</span>
-            </li>
-        </ul>
-        <ul id="widget">
-
-            <li class="course-row">
-                <span class="row-room-number"> A218 </span>
-
-                <span class="row-course-name">Professional Development 4</span>
-                    <span class="instructor">Backus D </span>
+    <!-- ===============SCHEDULE================== -->
+    		<section id="schedule-container">
+    			<ul id="widget-info">
+    				<li class="info-row">
+    					<span class="row-room-number">Room</span>
+    					<span class="row-course-name">Course</span>
+    					<span class="row-start-time">Start/End</span>
+    <!-- 					<span class="row-crn">CRN</span> -->
+    				</li>
+    			</ul>
+    			<ul id="widget">
 
 
-                <span class="row-start-time"><!--0830-->8:30 am<br/>
-                    <span class="row-end-time"><!--1055-->10:55 am</span>
-                </span>
-            </li>
-
-            <li class="course-row">
-                <span class="row-room-number"> A218 </span>
-
-                <span class="row-course-name">Professional Development 4</span>
-                    <span class="instructor">Backus D </span>
 
 
-                <span class="row-start-time"><!--0830-->8:30 am<br/>
-                    <span class="row-end-time"><!--1055-->10:55 am</span>
-                </span>
-            </li>
-            <li class="course-row">
-                <span class="row-room-number"> A218 </span>
-
-                <span class="row-course-name">Professional Development 4</span>
-                    <span class="instructor">Backus D </span>
 
 
-                <span class="row-start-time"><!--0830-->8:30 am<br/>
-                    <span class="row-end-time"><!--1055-->10:55 am</span>
-                </span>
-            </li>
-            <li class="course-row">
-                <span class="row-room-number"> A218 </span>
-
-                <span class="row-course-name">Professional Development 4</span>
-                    <span class="instructor">Backus D </span>
 
 
-                <span class="row-start-time"><!--0830-->8:30 am<br/>
-                    <span class="row-end-time"><!--1055-->10:55 am</span>
-                </span>
-            </li>
-            <li class="course-row">
-                <span class="row-room-number"> A218 </span>
-
-                <span class="row-course-name">Professional Development 4</span>
-                    <span class="instructor">Backus D </span>
 
 
-                <span class="row-start-time"><!--0830-->8:30 am<br/>
-                    <span class="row-end-time"><!--1055-->10:55 am</span>
-                </span>
-            </li>
-            <li class="course-row">
-                <span class="row-room-number"> A218 </span>
-
-                <span class="row-course-name">Professional Development 4</span>
-                    <span class="instructor">Backus D </span>
 
 
-                <span class="row-start-time"><!--0830-->8:30 am<br/>
-                    <span class="row-end-time"><!--1055-->10:55 am</span>
-                </span>
-            </li>
-            <li class="course-row">
-                <span class="row-room-number"> A218 </span>
-
-                <span class="row-course-name">Professional Development 4</span>
-                    <span class="instructor">Backus D </span>
 
 
-                <span class="row-start-time"><!--0830-->8:30 am<br/>
-                    <span class="row-end-time"><!--1055-->10:55 am</span>
-                </span>
-            </li>
-            <li class="course-row">
-                <span class="row-room-number"> A218 </span>
-
-                <span class="row-course-name">Professional Development 4</span>
-                    <span class="instructor">Backus D </span>
 
 
-                <span class="row-start-time"><!--0830-->8:30 am<br/>
-                    <span class="row-end-time"><!--1055-->10:55 am</span>
-                </span>
-            </li>
-        </ul>
 
-    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    					<li class="course-row">
+    						<span class="row-room-number">
+
+    						A218
+
+    						</span>
+    						<span class="row-course-name">Professional Development 4<br/>
+    							<span class="instructor">Backus D </span>
+    						</span>
+    						<span class="row-start-time"><!--0830-->8:30 am<br/>
+    							<span class="row-end-time"><!--1055-->10:55 am</span>
+    						</span>
+    	<!-- 					<span class="row-crn">50896</span> -->
+    					</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    					<li class="course-row">
+    						<span class="row-room-number">
+
+    						A215
+
+    						</span>
+    						<span class="row-course-name">Neuropathology 2<br/>
+    							<span class="instructor">Stajic V </span>
+    						</span>
+    						<span class="row-start-time"><!--0830-->8:30 am<br/>
+    							<span class="row-end-time"><!--1155-->11:55 am</span>
+    						</span>
+    	<!-- 					<span class="row-crn">50884</span> -->
+    					</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    					<li class="course-row">
+    						<span class="row-room-number">
+
+    						C122
+
+    						</span>
+    						<span class="row-course-name">Community Engagement<br/>
+    							<span class="instructor">Marosevich K, Lowe S, Ramsden K, Thompson P </span>
+    						</span>
+    						<span class="row-start-time"><!--0900-->9:00 am<br/>
+    							<span class="row-end-time"><!--0915-->9:15 am</span>
+    						</span>
+    	<!-- 					<span class="row-crn">70621</span> -->
+    					</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    					<li class="course-row">
+    						<span class="row-room-number">
+
+    						A218
+
+    						</span>
+    						<span class="row-course-name">Self-Care for RMTs 5<br/>
+    							<span class="instructor">Imperial-Prasad G </span>
+    						</span>
+    						<span class="row-start-time"><!--1130-->11:30 am<br/>
+    							<span class="row-end-time"><!--1225-->12:25 pm</span>
+    						</span>
+    	<!-- 					<span class="row-crn">50899</span> -->
+    					</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    					<li class="course-row">
+    						<span class="row-room-number">
+
+    						A215
+
+    						</span>
+    						<span class="row-course-name">Approach to Care Mgmt Ortho2<br/>
+    							<span class="instructor">Cote A </span>
+    						</span>
+    						<span class="row-start-time"><!--1300-->1:00 pm<br/>
+    							<span class="row-end-time"><!--1655-->4:55 pm</span>
+    						</span>
+    	<!-- 					<span class="row-crn">50878</span> -->
+    					</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    					<li class="course-row">
+    						<span class="row-room-number">
+
+    						B154
+
+    						</span>
+    						<span class="row-course-name">Basic Probability & Statistics<br/>
+    							<span class="instructor">Dhami S </span>
+    						</span>
+    						<span class="row-start-time"><!--1830-->6:30 pm<br/>
+    							<span class="row-end-time"><!--2025-->8:25 pm</span>
+    						</span>
+    	<!-- 					<span class="row-crn">50205</span> -->
+    					</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    					<li class="course-row">
+    						<span class="row-room-number">
+
+    						L304
+
+    						</span>
+    						<span class="row-course-name">Estimating Constructions Cost2<br/>
+    							<span class="instructor">King K </span>
+    						</span>
+    						<span class="row-start-time"><!--1830-->6:30 pm<br/>
+    							<span class="row-end-time"><!--2125-->9:25 pm</span>
+    						</span>
+    	<!-- 					<span class="row-crn">50198</span> -->
+    					</li>
+
+
+
+
+    			</ul>
+
+
+
+
+
+
+    		</section>
 
 </div>
 
-
-
 <!--  DATE/TIME  -->
-
     <div id="current-time">
         <p id="clock">HH:MM</p>
         <p id="date">January 01, 2017</p>
     </div>
 
-
 <!-- INLINE SCRIPTS FOR DATE/TIME CONTROL -->
     <script type="text/javascript">
+
     //Control TIME
-        var myTimer = setInterval(setClock,1000);
+    var myTimer = setInterval(setClock,1000);
 
-             function setClock(){
-                document.getElementById("clock").innerHTML=new
-                Date().toLocaleTimeString(navigator.language, {
-                hour: '2-digit', minute:'2-digit'});
-            };
-
+         function setClock(){
+            document.getElementById("clock").innerHTML=new
+            Date().toLocaleTimeString(navigator.language, {
+            hour: '2-digit', minute:'2-digit'});
+        };
 
     //Control DATE
 

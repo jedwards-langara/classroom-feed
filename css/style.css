@@ -31,29 +31,23 @@
 /* WHITE VARIANTS */
 /* BLACK VARIANTS */
 /* BRAND */
-/* DOCUMENT STYLING DEFINITIONS */
-/* WHITE VARIANTS */
-/* BLACK VARIANTS */
-/* BRAND */
-/* STYLES FOR COURSE CALENDAR */
-#schedule-container {
+/* STYLES FOR CALENDAR COMPONENT */
+#widget {
   float: left;
-  width: 65%;
-  margin: 3em;
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 0;
-  min-height: 85%;
-  height: 12em;
-  max-height: 12em;
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+#widget-info {
+  width: 100%;
 }
 
 .info-row {
   font-family: "Lato", Arial, Helvetica, Sans-serif;
   font-weight: bold;
-  text-align: center;
   text-transform: uppercase;
-  font-size: 100%;
+  font-size: 90%;
+  box-sizing: border-box;
   background-color: #000000;
   color: #fff;
   width: 100%;
@@ -74,40 +68,62 @@ ul#widget > li:nth-of-type(odd) {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.row-course-name {
-  font-size: 160%;
-  padding: 0.5em;
-}
-
 .row-start-time, .row-end-time, .row-course-name, .row-room-number, .row-crn {
   display: inline-block;
   vertical-align: top;
 }
 
+.row-start-time, .row-course-name, .row-room-number, .row-crn {
+  font-size: 80%;
+}
+
+.row-start-time, .row-course-name, .row-room-number, .row-crn {
+  font-size: 75%;
+}
+
 .row-room-number {
-  width: 10%;
-  padding: 1rem;
+  width: 15%;
+  padding-right: 10px;
 }
 
 .course-row .row-room-number {
-  font-size: 125%;
-  text-align: center;
+  font-size: 110%;
+}
+
+.course-row .row-room-number {
+  font-size: 95%;
+}
+
+.row-course-name {
+  width: 60%;
+  box-sizing: border-box;
+}
+
+.row-course-name {
+  width: 50%;
+}
+
+.course-row .row-course-name {
+  font-size: 95%;
+}
+
+.course-row .row-course-name {
+  font-size: 75%;
+}
+
+.course-row .row-course-name {
+  font-size: 130%;
 }
 
 span.instructor {
   font-family: "Lato", Arial, Helvetica, Sans-serif;
-  font-size: 100%;
+  font-size: 75%;
   font-weight: bold;
-  color: #595959;
-  padding: 1rem;
-  display: inline-block;
+  color: #666;
 }
 
 .row-start-time {
   width: 20%;
-  text-align: center;
-  display: inline-block;
-  float: right;
 }
 
 * {
@@ -117,6 +133,8 @@ span.instructor {
 }
 
 body {
+  font-family: "Adelle", "Bitter", Georgia, serif;
+  font-size: 16px;
   background: black;
   height: 100%;
   overflow: hidden;
@@ -155,7 +173,61 @@ p {
 }
 
 ul, li {
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+}
+
+.day {
+  background-image: url("../../images/background.jpg");
+  background-size: cover;
+  background-position: 0px -1750px;
+  background-repeat: no-repeat;
+}
+
+.sunset {
+  background-image: url("http://www.langara.ca/continuing-studies/classrooms/images/sunset.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.night {
+  background: url("http://www.langara.ca/continuing-studies/classrooms/images/night.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#date-time-container {
+  box-sizing: border-box;
+}
+
+#schedule-container {
+  float: left;
+  width: 65%;
+  margin: 0 3em 0 3em;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0;
+  min-height: 85%;
+  height: 12em;
+  max-height: 12em;
+}
+
+#schedule-container {
+  font-size: 95%;
+  margin: 6.5em 0;
+}
+
+#schedule-container {
+  font-size: 120%;
+  padding: 0;
+}
+
+#schedule-container {
+  width: 60%;
+  font-size: 160%;
+  opacity: 0.95;
+  height: 100%;
 }

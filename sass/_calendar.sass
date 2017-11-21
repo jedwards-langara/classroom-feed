@@ -1,24 +1,19 @@
-@import _mixins/_color.sass
+/* STYLES FOR CALENDAR COMPONENT */
 
-/* STYLES FOR COURSE CALENDAR */
-
-#schedule-container
+#widget
     float: left
-    width: 65%
-    margin: 3em
-    overflow: hidden
-    background-color: $accent-black
-    padding: 0
-    min-height: 85%
-    height: 12em
-    max-height: 12em
+    width: 100%
+    border: 2px solid $accent-black
+
+#widget-info
+    width: 100%
 
 .info-row
-    font-family: "Lato", Arial, Helvetica, Sans-serif
+    font-family: 'Lato', Arial, Helvetica, Sans-serif
     font-weight: bold
-    text-align: center
     text-transform: uppercase
-    font-size: 100%
+    font-size: 90%
+    box-sizing: border-box
     background-color: $black
     color: $white
     width: 100%
@@ -36,34 +31,53 @@
 ul#widget > li:nth-of-type(odd)
     background-color: $subtle-black
 
-.row-course-name
-    font-size: 160%
-    padding: .5em
-
 .row-start-time, .row-end-time, .row-course-name, .row-room-number, .row-crn
     display: inline-block
     vertical-align: top
 
-.row-room-number
-    width: 10%
-    padding: 1rem
+@media only screen and (max-width: 698px)
+.row-start-time, .row-course-name, .row-room-number, .row-crn
+    font-size: 80%
 
+@media only screen and (max-width: 414px)
+.row-start-time, .row-course-name, .row-room-number, .row-crn
+    font-size: 75%
+
+.row-room-number
+    width: 15%
+    padding-right: 10px
 
 .course-row .row-room-number
-    font-size: 125%
-    text-align: center
+    font-size: 110%
+
+@media only screen and (max-width: 414px)
+.course-row .row-room-number
+    font-size: 95%
+
+.row-course-name
+    width: 60%
+    box-sizing: border-box
+
+@media only screen and (max-width: 414px)
+.row-course-name
+    width: 50%
+
+.course-row .row-course-name
+    font-size: 95%
+
+@media only screen and (max-width: 414px)
+.course-row .row-course-name
+    font-size: 75%
+
+@media only screen and (min-width: 1280px)
+.course-row .row-course-name
+    font-size: 130%
 
 span.instructor
     font-family: 'Lato', Arial, Helvetica, Sans-serif
-    font-size: 100%
+    font-size: 75%
     font-weight: bold
-    color: lighten($black, 35%)
-    padding: 1rem
-    display: inline-block
-
+    color: #666
 
 .row-start-time
     width: 20%
-    text-align: center
-    display: inline-block
-    float: right
