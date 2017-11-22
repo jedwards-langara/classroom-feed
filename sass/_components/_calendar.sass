@@ -1,5 +1,19 @@
 /* STYLES FOR CALENDAR COMPONENT */
 
+#date-time-container
+    box-sizing: border-box
+
+#schedule-container
+    float: left
+    width: 70%
+    margin: 0
+    overflow: hidden
+    background-color: $accent-black
+    padding: s
+    min-height: 100%
+    height: 16em
+    max-height: 16em
+
 #widget
     float: left
     width: 100%
@@ -11,22 +25,19 @@
 .info-row
     font-family: 'Lato', Arial, Helvetica, Sans-serif
     font-weight: bold
+    font-size: 1.2em
     text-transform: uppercase
-    font-size: 90%
-    box-sizing: border-box
     background-color: $black
     color: $white
     width: 100%
-    padding: 1em 0 1em 1em
+    padding: 1.5em 0 1em .25em
     letter-spacing: 2px
 
 .course-row
     color: $black
     width: 100%
-    box-sizing: border-box
     background-color: $accent-black
-    font-size: 100%
-    padding: 0.4em 0 0.4em 0.4em
+    padding: .75em 0 .75em 0.25em
 
 ul#widget > li:nth-of-type(odd)
     background-color: $subtle-black
@@ -35,49 +46,27 @@ ul#widget > li:nth-of-type(odd)
     display: inline-block
     vertical-align: top
 
-@media only screen and (max-width: 698px)
-.row-start-time, .row-course-name, .row-room-number, .row-crn
-    font-size: 80%
-
-@media only screen and (max-width: 414px)
-.row-start-time, .row-course-name, .row-room-number, .row-crn
-    font-size: 75%
-
 .row-room-number
-    width: 15%
-    padding-right: 10px
+    text-align: center
+    width: 10%
 
 .course-row .row-room-number
-    font-size: 110%
-
-@media only screen and (max-width: 414px)
-.course-row .row-room-number
-    font-size: 95%
+    font-size: 2em
 
 .row-course-name
-    width: 60%
+    width: 75%
     box-sizing: border-box
 
-@media only screen and (max-width: 414px)
-.row-course-name
-    width: 50%
-
 .course-row .row-course-name
-    font-size: 95%
-
-@media only screen and (max-width: 414px)
-.course-row .row-course-name
-    font-size: 75%
-
-@media only screen and (min-width: 1280px)
-.course-row .row-course-name
-    font-size: 130%
+    font-size: 1.7em
 
 span.instructor
     font-family: 'Lato', Arial, Helvetica, Sans-serif
-    font-size: 75%
-    font-weight: bold
-    color: #666
+    font-size: 65%
 
-.row-start-time
-    width: 20%
+.row-class-time
+    width: 10%
+    text-align: center
+
+.row-start-time, .row-end-time
+    font-size: 1.25em
