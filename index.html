@@ -166,17 +166,18 @@
         </ul>
     </section>
 
-    <script type="text/javascript" src="http://www.langara.ca/continuing-studies/classrooms/js/newsScroll1.js"></script>
-    <script type="text/javascript">$('#widget').newsScroll();</script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
-
-<!-- DATE/TIME -->
-    <section id="current-time">
-        <p id="clock">HH:MM</p>
-        <p id="date">January 01, 2017</p>
-    </section>
+    <!-- DATE/TIME -->
+        <section id="current-time">
+            <p id="clock">HH:MM</p>
+            <p id="date">January 01, 2017</p>
+        </section>
 
 </div>
+
+
+<script type="text/javascript">$('#widget').newsScroll();</script>
+<script src="js/moment.js" charset="utf-8"></script>
+
 <!-- INLINE SCRIPTS FOR DATE/TIME CONTROL -->
     <script type="text/javascript">
 
@@ -184,14 +185,13 @@
     var myTimer = setInterval(setClock,1000);
 
          function setClock(){
-            document.getElementById("clock").innerHTML=new
-            Date().toLocaleTimeString(navigator.language, {
-            hour: '2-digit', minute:'2-digit'});
+            document.getElementById("clock").innerHTML = moment().format('LT');
+
         };
 
     //Control DATE
 
-    function clockTick() {
+    function currentDate() {
 
         var currentTime = new Date();
         var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -202,10 +202,13 @@
             document.getElementById('date').innerHTML = months[currentTime.getMonth()] + " " + currentTime.getDate()+ ", " + currentTime.getFullYear();
         }
 
-        setInterval (function() {clockTick();}, 1000);
+        setInterval (function() {currentDate();}, 1000);
 
     </script>
 
 </body>
 
 </html>
+
+
+('en-US', {hour12:true});
