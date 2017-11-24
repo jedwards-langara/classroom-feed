@@ -186,29 +186,26 @@
 
          function setClock(){
             document.getElementById("clock").innerHTML = moment().format('LT');
-
+            document.getElementById("date").innerHTML = moment().format('LL');
         };
 
     //Control DATE
-
-    function currentDate() {
-
-        var currentTime = new Date();
-        var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-        var month = currentTime.getMonth() + 1;
-        var day = currentTime.getDate();
-        var year = currentTime.getFullYear();
-
-            document.getElementById('date').innerHTML = months[currentTime.getMonth()] + " " + currentTime.getDate()+ ", " + currentTime.getFullYear();
-        }
-
-        setInterval (function() {currentDate();}, 1000);
+    //
+    // function currentDate() {
+    //
+    //     var currentTime = new Date();
+    //     var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+    //     var month = currentTime.getMonth() + 1;
+    //     var day = currentTime.getDate();
+    //     var year = currentTime.getFullYear();
+    //
+    //         document.getElementById('date').innerHTML = months[currentTime.getMonth()] + " " + currentTime.getDate()+ ", " + currentTime.getFullYear();
+    //     }
+    //
+    //     setInterval (function() {currentDate();}, 1000);
 
     </script>
 
 </body>
 
 </html>
-
-
-('en-US', {hour12:true});
